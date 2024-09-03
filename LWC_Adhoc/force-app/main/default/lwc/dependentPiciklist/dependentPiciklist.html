@@ -1,0 +1,13 @@
+<template>
+    <lightning-combobox
+        label="Country"
+        options={controllingOptions}
+        onchange={handleControllingChange}>
+    </lightning-combobox>
+
+    <lightning-combobox
+        label = "State"
+        options = {dependentOptions}>
+        <!-- disabled = {dependentOptions.size() === 0} -->
+    </lightning-combobox>
+</template>
